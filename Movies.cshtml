@@ -1,0 +1,45 @@
+﻿@{
+    var db = Database.Open("Movies");
+    var sqlQuery = "SELECT * FROM mList1";
+    var data = db.Query(sqlQuery);
+
+    var zip = Request.QueryString["zip"];
+
+    Layout = "~/_SiteLayout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+    </head>
+
+    <!-- Content area -->
+
+    <body>
+
+        <div class="dropdown-menu">
+            <strong>Drop</strong>
+            <div class="dropdown-toggle">
+                <p>toggle div The difficulty that most startup entrepreneurs 
+                    face is finding <span id="jSpan">a manufacturer</span> </p>
+            </div>
+        </div>
+
+        <p>@MyFunctions.HelloWorld()</p>
+        <div id="movieslist" style="background-color:  #ffd800">
+            <ol>
+               @foreach(var row in data)
+               {
+                   //let's do stuff here
+                   <li>@row.Name</li>
+               }
+            </ol>
+        </div>
+
+    </body>
+
+</html>

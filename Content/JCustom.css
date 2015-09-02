@@ -1,0 +1,170 @@
+#jb {
+    width: 100px;
+    margin: auto;
+    background-color: #ffd800;
+    border-style: inset;
+    border-width: 6px;
+    height: 20px;
+    border-color: #b6ff00; 
+}
+
+.dropdown-toggle{
+    width: 56px;
+    height: 24px;
+    border: 2px solid green;
+    float: right;
+}
+
+.dropdown-menu {
+  background : #F2F2F2;
+  background : rgba(242, 242, 242, 1);
+  border-style : Solid;
+  border-color : #000000;
+  border-color : rgba(0, 0, 0, 1);
+  border-width : 1px;
+  position : absolute;
+  left : 379px;
+  top : 258px;
+  width : 668px;
+  height : 391px;
+}
+
+.icon-menu img, p, h4{
+    display: inline-block;
+}
+
+/*---------------------- This is for the slide in side menu ----------------------------*/
+body{
+    overflow:  hidden;
+    position: relative;
+    left: 0;
+    margin: 0;
+}
+
+.jumbotron {
+    background-image: url('/Images/tree_bg.png');
+    background-color: #b6ff00;
+    height: 100%;
+    /*-webkit-background-size: cover;*/
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+
+.menu {
+    left: -285px;
+    position: fixed;
+    width: 285px;
+    height: 100%;
+    /*url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/black-thread.png')*/
+    background-color: DodgerBlue;
+}
+
+.menu ul {
+    border-top: 1px solid blue;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    line-height: 45px;
+    border-bottom: 1px solid blue;
+    padding-left: 20px;
+    padding-bottom: 3px;
+    padding-top:  3px;
+}
+
+.menu a {
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.icon-menu {
+    color: #fff;
+    cursor: pointer;
+    font-family: cursive;
+    font-size: 62px;
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block; 
+}
+
+.icon-close {
+    cursor: pointer;
+    padding-left: 10px;
+    padding-top: 10px; 
+    background-color: Beige;
+}
+
+/*------------------------ Drop down functionality from this point on ------------------------*/
+p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.row {
+    margin: 0;
+    /*display: inline-block;*/
+}
+
+.articles {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.article {
+    color: #222;
+    background: rgba(255,255,255,.7);
+    border-spacing: 2px;
+    border-color: green;
+    font-family: arial, cursive;
+    border-bottom: 2px #f5ff0f dashed;
+}
+
+.current .item {
+    background: rgba(206,220,206,.7);
+}
+
+.item {
+    cursor: pointer;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.item .source {
+    margin-left: 20px;
+    border: 2px solid DodgerBlue; 
+    text-align: left;
+}
+
+.item .title {
+    font-weight: bolder;
+    border: 2px solid DodgerBlue;
+}
+
+.item .pubdate {
+    margin-right: 20px;
+    text-align: right;
+    border: 2px solid DodgerBlue;
+}
+
+.description {
+    display: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.description h1 {
+    margin-top: 0px;
+    font-size: 36px;
+    color:  #b6ff00;
+}
+
+
+

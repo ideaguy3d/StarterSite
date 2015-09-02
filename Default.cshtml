@@ -1,0 +1,65 @@
+﻿@{
+    Layout = "~/_SiteLayout.cshtml";
+    Page.Title = "~Julius Alvarado ^__^";
+}
+
+@section featured {
+<section class="featured">
+    <div class="content-wrapper">
+        <hgroup class="title">
+            <h1>@Page.Title.</h1>
+            <h2>Despite popular perception, the United States is still the world's largest manufacturing economy</h2>
+        </hgroup>
+        <p>
+            To learn more about ASP.NET Web Pages, visit
+            <a href="http://asp.net/webpages" title="ASP.NET Web Pages Website">http://asp.net/webpages</a>.
+            The page features <mark>videos, tutorials, and samples</mark> to help you get the most from ASP.NET Web Pages.
+            If you have any questions about ASP.NET Web Pages, visit
+            <a href="http://forums.iis.net/1166.aspx" title="ASP.NET Web Pages Forum">our forums</a>.
+        </p>
+    </div>
+</section>
+}
+
+{{4+4}}
+<section ng-controller="PanelController as panel">
+    <ul class="nav nav-pills">
+        <li ng-class="{active: isSet(1)}"><!--I'm actually not sure we had had move inside of curely brackets-->
+            <a href ng-click="setTab(1)">top anchor</a>
+        </li>
+        <li ng-class="{active: isSet(2)}">
+            <a href ng-click="setTab(2)">mid anchor</a>
+        </li>
+        <li ng-class="{active: isSet(3)}">
+            <a href ng-click="setTab(3)">bottom anchor</a>    
+        </li>
+    </ul>
+
+    <div class="panel">
+        <h3>Description</h3>
+        <p>this is a paragraph element</p>
+    </div>
+</section>
+
+
+<h3>We suggest the following:</h3>
+
+<ol class="round">
+    <li class="one">
+        <h5>Getting Started</h5>
+        The difficulty that most startup entrepreneurs face is finding a manufacturer that will take a chance on a brand-new product with small production runs. This is true regardless of whether you choose a local manufacturer or outsource production overseas, says Ralph Biedermann, president of the MRB Group, a manufacturing consultancy based in Chicago. 
+        <a href="#">Learn more…</a>
+    </li>
+
+    <li class="two">
+        <h5>Add NuGet packages and jump start your coding</h5>
+        NuGet makes it easy to install and update free libraries and tools.
+        <a href="http://go.microsoft.com/fwlink/?LinkId=245140">Learn more…</a>
+    </li>
+
+    <li class="three">
+        <h5>Find Web Hosting</h5>
+        You can easily find a web hosting company that offers the right mix of features and price for your applications.
+        <a href="http://go.microsoft.com/fwlink/?LinkId=245143">Learn more…</a>
+    </li>
+</ol>

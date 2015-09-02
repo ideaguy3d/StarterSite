@@ -1,0 +1,14 @@
+﻿@functions{
+    private static string WeatherService = "http://www.weather.gov/forecasts/xml/sample_products/browser_interface/ndfdBrowserClientByDay.php?listLatLon={0}&format=24+hourly&numDays=1";
+    private static string ZipcodeService = "http://www.weather.gov/forecasts/xml/sample_products/browser_interface/ndfdXMLclient.php?listZipCodeList={0}";
+
+    public static string GetCoordinates(string zipcode)
+    {
+        string serviceURL = string.Format(ZipcodeService, zipcode);
+        string dwml = string.Empty;
+
+        System.Net.WebClient webClient = new System.Net.WebClient();
+        dwml = webClient.DownloadString(serviceURL);
+        return dwml;
+    }
+}
